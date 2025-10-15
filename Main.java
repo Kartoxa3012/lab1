@@ -2,7 +2,12 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int[] s = new int[] {19,17,15,13,11,9,7,5,3};
+        int[] s = new int[9];
+        int k = 19;
+        for (int j = 0; j < s.length; j++){
+            s[j] = k;
+            k = k-2;
+        }
         float[] x = new float[12];
         for (int i = 0; i < x.length; i++){
             x[i] = ((float)Math.random()*21) - 9;
@@ -17,7 +22,7 @@ public class Main {
                     case 3, 7, 11, 13:
                         s1[i][j] = function2(x[j]);
                         break;
-                    case 5, 9, 17, 19:
+                    default:
                         s1[i][j] = function3(x[j]);
                         break;
                 }
