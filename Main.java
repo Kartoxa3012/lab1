@@ -28,11 +28,11 @@ public class Main {
     }
     public static double function1(float x1) {
         double x2 = (double) x1;
-        return Math.cos(Math.asin(1 / Math.exp(x2)));
+        return Math.cos(Math.asin(1 / Math.exp(Math.abs(x2))));
     }
     public static double function2(float x1) {
         double x2 = (double) x1;
-        return Math.exp(3 / (Math.pow(x2, ((x2 + 3) / x2))));
+        return Math.exp(Math.pow((3 / (Math.pow(x2, ((x2 + 3) / x2)))), Math.tan(x2)));
     }
     public static double function3(float x1) {
         double x2 = (double) x1;
